@@ -22,7 +22,31 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:hint="@string/nome"
+        android:minHeight="48dp"
         android:padding="5dp"
-        android:layout_margin="5dp" />
+        android:layout_margin="5dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/sobrenomeEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/sobrenome"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:importantForAutofill="no" />
 
 </LinearLayout>

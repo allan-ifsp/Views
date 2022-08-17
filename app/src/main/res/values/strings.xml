@@ -2,4 +2,6 @@
     <string name="app_name">Views</string>
     <string name="preencha_seus_dados">Preencha seus dados</string>
     <string name="nome">Nome</string>
+    <string name="sobrenome">sobrenome</string>
+    <string name="email">email</string>
 </resources>
