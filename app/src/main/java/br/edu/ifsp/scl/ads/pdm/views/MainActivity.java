@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationBarView;
 
 import br.edu.ifsp.scl.ads.pdm.views.databinding.ActivityMainBinding;
 
@@ -38,6 +41,24 @@ public class MainActivity extends AppCompatActivity {
                     //amb.femininoRb.isChecked()? amb.femininoRb.getText().toString() : amb.masculinoRb.getText().toString()
                     amb.femininoRb.isChecked()? getString(R.string.feminino) : getString(R.string.masculino)
             );
+            Toast.makeText(this, pessoa.toString(), Toast.LENGTH_SHORT).show();
+        });
+
+        amb.estadoCivilSp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 1){
+                    amb.conjugeLl.setVisibility(View.VISIBLE);
+                }
+                else {
+                    amb.conjugeLl.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
         });
 
     }
