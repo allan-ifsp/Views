@@ -33,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
                     amb.nomeEt.getText().toString(),
                     amb.sobrenomeEt.getText().toString(),
                     amb.emailEt.getText().toString(),
-                    ((TextView) amb.estadoCivilSp.getSelectedView()).getText(),
+                    amb.estadoCivilSp.getSelectedItem().toString(),
+                    //((TextView) amb.estadoCivilSp.getSelectedView()).getText().toString(),
+                    //amb.femininoRb.isChecked()? amb.femininoRb.getText().toString() : amb.masculinoRb.getText().toString()
+                    amb.femininoRb.isChecked()? getString(R.string.feminino) : getString(R.string.masculino)
             );
         });
 
