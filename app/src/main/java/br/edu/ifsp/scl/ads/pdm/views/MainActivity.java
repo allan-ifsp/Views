@@ -19,7 +19,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(amb.getRoot());
     }
 
-    public void onClickSalvar(View botao){
-        Toast.makeText(this, "clicou no slavar", Toast.LENGTH_LONG).show();
+    public void onClickSBotao(View botao){
+        if (botao.getId() == R.id.salvarBt){
+            Toast.makeText(this, "clicou no slavar", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(this, "clicou no limpar", Toast.LENGTH_SHORT).show();
+        }
     }
 }
