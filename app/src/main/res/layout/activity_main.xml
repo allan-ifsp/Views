@@ -79,8 +79,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/masculino"
-            android:layout_weight="1"
-            android:checked="true" />
+            android:layout_weight="1" />
     </RadioGroup>
 
     <Button
@@ -88,7 +87,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/salvar"
-        android:onClick="onClickSBotao"
         android:padding="5dp"
         android:layout_margin="5dp" />
 
@@ -97,7 +95,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/limpar"
-        android:onClick="onClickSBotao"
         android:padding="5dp"
         android:layout_margin="5dp" />
 
