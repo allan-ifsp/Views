@@ -2,6 +2,15 @@
     <string name="app_name">Views</string>
     <string name="preencha_seus_dados">Preencha seus dados</string>
     <string name="nome">Nome</string>
-    <string name="sobrenome">sobrenome</string>
-    <string name="email">email</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="email">Email</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="salvar">Salvar</string>
+    <string-array name="estado_civil">
+        <item>Solteiro(a)</item>
+        <item>Casado(a)</item>
+        <item>Divorciado(a)</item>
+        <item>Viuvo</item>
+    </string-array>
 </resources>
